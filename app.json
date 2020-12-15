@@ -1,17 +1,17 @@
 {
- "name": "TeleBot - UserBot",
- "description": "An advanced Telethon Userbot, from @TeleBotSupport",
- "logo": "https://telegra.ph/file/0b1d5cb8deeec7a506154.jpg",
+ "name": "Gamerzbot - UserBot",
+ "description": "An advanced Telethon Userbot, from @Gamerzbot",
+ "logo": "https://telegra.ph/file/f005d88b07a15e5cf30f3.jpg",
  "keywords": [
   "telegram",
   "userbot",
-  "TeleBot",
+  "Gamerzbot",
   "modular",
   "productivity"
  ],
- "repository": "https://github.com/xditya/TeleBot/",
- "website": "https://xditya.gitbook.io/telebot/",
- "success_url": "https://t.me/TeleBotHelp/13",
+ "repository": "https://github.com/gamerfuckerofficial/Gamerzbot",
+ "website": "htts://t.me/Gamerzbots",
+ "success_url": "https://t.me/Gamerzbots",
  "stack": "container",
  "env": {
   "ENV": {
@@ -20,7 +20,7 @@
   },
   "TEMP_DOWNLOAD_DIRECTORY": {
    "description": "Where downloaded files will go.",
-   "value": "./telebot/DOWNLOADS/",
+   "value": "./Gamerzbot/DOWNLOADS/",
    "required": false
   },
   "APP_ID": {
@@ -32,7 +32,7 @@
    "value": ""
   },
   "STRING_SESSION": {
-   "description": "Get this value by running python3 telesetup.py locally or https://telebot-sessionstring-generator.xditya.repl.run online.",
+   "description": "Get this value by running python3 telesetup.py locally or https://repl.it/@gamerfuckeroffi/Gamerzbot online.",
    "value": ""
   },  
   "CUSTOM_PMPERMIT": {
@@ -55,7 +55,7 @@
    "required": false
   },  
   "GIT_REPO_NAME": {
-   "description": "Your repo name Example: xditya/TeleBot, but GITHUB_ACCESS_TOKEN must be setup first.",
+   "description": "Your repo name Example: gamerfuckerofficial/Gamerzbot, but GITHUB_ACCESS_TOKEN must be setup first.",
    "value": "",
    "required": false
   },
@@ -85,7 +85,7 @@
    "required": false
   },
   "PRIVATE_GROUP_ID": {
-   "description": "Same value as PRIVATE_GROUP_BOT_API_ID. Must read https://telegra.ph/TeleBot-Setup-06-06 for knowing how to get the value. Required for pmpermit.",
+   "description": "Same value as PRIVATE_GROUP_BOT_API_ID. Must read https://telegra.ph/GamerzBot-Setup-12-15 for knowing how to get the value. Required for pmpermit.",
    "value": "",
    "required": true
   },
