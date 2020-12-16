@@ -9,7 +9,7 @@ from shutil import which
 from telebot import ALIVE_NAME, CMD_HELP, telever
 
 # ================= CONSTANT =================
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TeleBot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "GamerzBot"
 # ============================================
 
 
