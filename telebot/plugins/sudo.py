@@ -29,9 +29,9 @@ async def sudo(event):
     sudo = "True" if Config.SUDO_USERS else "False"
     users = os.environ.get("SUDO_USERS", None)
     if sudo == "True":
-        await eor(event, f"**TeleBot**\nSudo - `Enabled`\nSudo user(s) - `{users}`")
+        await eor(event, f"**GamerzBot**\nSudo - `Enabled`\nSudo user(s) - `{users}`")
     else:
-        await eor(event, f"**TeleBot**\nSudo - `Disabled`")
+        await eor(event, f"**GamerzBot**\nSudo - `Disabled`")
 
 
 @telebot.on(admin_cmd(pattern="prefix"))
