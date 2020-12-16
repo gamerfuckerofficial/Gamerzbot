@@ -144,7 +144,7 @@ async def kang(args):
                     packnick = (
                         f"{telename} Vol.{pack}"
                         if telename
-                        else f"@{user.username}'s TeleBot Vol.{pack}"
+                        else f"@{user.username}'s GamerzBot Vol.{pack}"
                     )
                     await args.edit(
                         "`Switching to Pack "
