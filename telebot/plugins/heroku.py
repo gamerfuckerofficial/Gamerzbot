@@ -204,12 +204,12 @@ async def _(givelogs):
         givelogs.chat_id,
         "logs-telebot.txt",
         reply_to=givelogs.id,
-        caption=f"**Heroku** TeleBot Logs.\nPasted [here]({url}) too!",
+        caption=f"**Heroku** GamerzBot Logs.\nPasted [here]({url}) too!",
     )
     await eor(givelogs, "Heroku Logs Incoming!!")
     await asyncio.sleep(5)
     await givelogs.delete()
-    return os.remove("logs-telebot.txt")
+    return os.remove("logs-Gamerzbot.txt")
 
 
 CMD_HELP.update(
