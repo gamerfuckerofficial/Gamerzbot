@@ -21,7 +21,7 @@ from telebot.utils import admin_cmd
 @telebot.on(admin_cmd(outgoing=True, pattern=r"gs (.*)"))
 @telebot.on(sudo_cmd(allow_sudo=True, pattern=r"gs (.*)"))
 async def gsearch(q_event):
-    """ For .google command, do a Google search from @TeleBotHelp. """
+    """ For .google command, do a Google search from @Gamerzbots. """
     match = q_event.pattern_match.group(1)
     page = findall(r"page=\d+", match)
     try:
