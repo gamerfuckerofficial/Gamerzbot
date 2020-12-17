@@ -124,4 +124,4 @@ async def lst(event):
         await eor(event, msg)
 
 
-CMD_HELP.update({"file": ".ls <directory>" "\nUsage: File Manager plugin for TeleBot."})
+CMD_HELP.update({"file": ".ls <directory>" "\nUsage: File Manager plugin for GamerzBot."})
