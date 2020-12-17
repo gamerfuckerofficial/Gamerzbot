@@ -1,4 +1,4 @@
-# Join @TeleBotHelp for custom plugins
+# Join @Gamerzbots for custom plugins
 
 import asyncio
 
