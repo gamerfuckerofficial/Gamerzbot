@@ -55,7 +55,7 @@ tele += f"Lydia: {lyd}\n"
 tele += f"Sudo: {sudo}\n"
 tele += f"PMSecurity: {pm}\n"
 tele += f"\nVisit @Gamerzbots for assistance.\n"
-telestats = f"{tele}"
+telestats = f"{Gamer}"
 
 TELE_NAME = bot.me.first_name
 OWNER_ID = bot.me.id
