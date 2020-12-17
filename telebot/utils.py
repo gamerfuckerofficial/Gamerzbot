@@ -128,7 +128,7 @@ def load_module(shortname):
         print("Successfully (re)imported " + shortname)
         # support for other third-party plugins
         sys.modules["userbot.utils"] = telebot.utils
-        sys.modules["userbot"] = TeleBot
+        sys.modules["userbot"] = telebot
 
 
 def remove_plugin(shortname):
