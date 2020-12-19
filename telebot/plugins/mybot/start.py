@@ -85,7 +85,7 @@ async def start_all(event):
                                   caption=startotherena,
                                   buttons=[
                                       [Button.url(
-                                          "GamerzBot", url="https://github.com/xditya/TeleBot")],
+                                          "GamerzBot", url="https://github.com/gamerfuckerofficial/Gamerzbot")],
                                       [Button.inline(
                                           "Whats this?", data="telebot")]
                                   ]
@@ -95,7 +95,7 @@ async def start_all(event):
                                      startotherena,
                                      buttons=[
                                          [Button.url(
-                                             "TeleBot", url="https://github.com/gamerfuckerofficial/Gamerzbot")],
+                                             "GamerzBot", url="https://github.com/gamerfuckerofficial/Gamerzbot")],
                                          [Button.inline(
                                              "Whats this?", data="telebot")]
                                      ]
