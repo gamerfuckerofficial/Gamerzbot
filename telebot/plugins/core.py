@@ -56,7 +56,7 @@ async def send(event):
         end = datetime.now()
         time_taken_in_ms = (end - start).seconds
         await pro.edit(
-            f"**► Plugin Name:** `{input_str}`\n**► Uploaded in {time_taken_in_ms} seconds.**\n**► Uploaded by:** [{DEFAULTUSER}](tg://user?id={hmm})\n\n© @TeleBotSupport"
+            f"**► Plugin Name:** `{input_str}`\n**► Uploaded in {time_taken_in_ms} seconds.**\n**► Uploaded by:** [{DEFAULTUSER}](tg://user?id={hmm})\n\n© @GamerzBot"
         )
         await asyncio.sleep(DELETE_TIMEOUT)
     else:
@@ -80,7 +80,7 @@ async def install(event):
                 shortname = path1.stem
                 load_module(shortname.replace(".py", ""))
                 await event.edit(
-                    "TeleBot Succesfully Installed The Plugin `{}`".format(
+                    "GamerzBot Succesfully Installed The Plugin `{}`".format(
                         os.path.basename(downloaded_file_name)
                     )
                 )
@@ -103,10 +103,10 @@ async def unload(event):
     shortname = event.pattern_match["shortname"]
     try:
         remove_plugin(shortname)
-        await event.edit(f"TeleBot has successfully unloaded {shortname}")
+        await event.edit(f"GamerzBot has successfully unloaded {shortname}")
     except Exception as e:
         await event.edit(
-            "TeleBot has successfully unloaded {shortname}\n{}".format(
+            "GamerzBot has successfully unloaded {shortname}\n{}".format(
                 shortname, str(e)
             )
         )
@@ -123,10 +123,10 @@ async def load(event):
         except BaseException:
             pass
         load_module(shortname)
-        await event.edit(f"TeleBot has successfully loaded {shortname}")
+        await event.edit(f"GamerzBot has successfully loaded {shortname}")
     except Exception as e:
         await event.edit(
-            f"TeleBot could not load {shortname} because of the following error.\n{str(e)}"
+            f"GamerzBot could not load {shortname} because of the following error.\n{str(e)}"
         )
 
 
