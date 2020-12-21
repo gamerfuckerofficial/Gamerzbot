@@ -16,7 +16,7 @@ async def install(event):
 
         return
 
-    cmd = "ls telebot/plugins"
+    cmd = "ls telebot/plugins/*.py"
 
     process = await asyncio.create_subprocess_shell(
 
