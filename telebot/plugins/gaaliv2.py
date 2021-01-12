@@ -1,3 +1,4 @@
+#credit @Jaadubotofficial if you gonna kang this give credit to respective owner @Jaadubotofficial
 """COMMAND : .gali"""
 import asyncio
 from telethon import events
