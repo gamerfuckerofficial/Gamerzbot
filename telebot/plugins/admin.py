@@ -238,7 +238,7 @@ async def _(event):
     except (Exception) as exc:
         await eor(event, str(exc))
     else:
-        await eor(event, f"{input_cmd} nikal laude koi jarurat nahi yaha teri!")
+        await eor(event, f"{input_cmd}ned successfully!")
 
 
 @telebot.on(admin_cmd(pattern="pgs ?(.*)"))
@@ -299,7 +299,7 @@ async def _(event):
     except (Exception) as exc:
         await eor(event, str(exc))
     else:
-        await eor(event, f"{input_cmd}ned nikal laude koi jarurat nahi yaha teri!")
+        await eor(event, f"{input_cmd}ned successfully!")
 
 
 @telebot.on(admin_cmd(outgoing=True, pattern="admins$"))
