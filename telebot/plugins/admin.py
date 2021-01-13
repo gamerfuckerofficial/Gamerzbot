@@ -142,7 +142,7 @@ async def promote(promt):
         return
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await x.edit("`Promoted Successfully! Enjoy!!`")
+        await x.edit("`Bangaya admin ab jaa maje kar`")
     except BadRequestError:
         await x.edit(NO_PERM)
         return
@@ -197,7 +197,7 @@ async def demote(dmod):
     except BadRequestError:
         await eor(dmod, NO_PERM)
         return
-    await eor(dmod, "`Demoted this retard!!`")
+    await eor(dmod, "`Demote kar diya!!`")
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
@@ -358,7 +358,7 @@ async def pin(msg):
         await eor(msg, NO_PERM)
         return
 
-    await eor(msg, "`Pinned Successfully!`")
+    await eor(msg, "`Pin hogya!`")
 
     user = await get_user_from_id(msg.sender_id, msg)
 
@@ -404,10 +404,10 @@ async def kick(usr):
     if reason:
         await eor(
             usr,
-            f"`Kicked` [{user.first_name}](tg://user?id={user.id})`!`\nReason: {reason}",
+            f"`Bhaag bhadve` [{user.first_name}](tg://user?id={user.id})`!`\nReason: {reason}",
         )
     else:
-        await eor(usr, f"`Kicked` [{user.first_name}](tg://user?id={user.id})`!`")
+        await eor(usr, f"`Bhaag bhadve` [{user.first_name}](tg://user?id={user.id})`!`")
 
     if BOTLOG:
         await usr.client.send_message(
