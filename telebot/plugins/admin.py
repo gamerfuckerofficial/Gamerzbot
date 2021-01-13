@@ -299,7 +299,7 @@ async def _(event):
     except (Exception) as exc:
         await eor(event, str(exc))
     else:
-        await eor(event, f"{input_cmd}ned janede ek chance de diya!")
+        await eor(event, f"{input_cmd}ned nikal laude koi jarurat nahi yaha teri!")
 
 
 @telebot.on(admin_cmd(outgoing=True, pattern="admins$"))
