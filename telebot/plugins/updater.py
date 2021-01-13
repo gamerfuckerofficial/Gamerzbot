@@ -61,8 +61,8 @@ async def upstream(ups):
     force_updateme = False
 
     try:
-        txt = "`Oops.. Updater cannot continue as "
-        txt += "some problems occured`\n\n**LOGTRACE:**\n"
+        txt = "`Oops.. Update nahi hora bc "
+        txt += "koi toh problem aara hai`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
         await ups.edit(f"{txt}\n`directory {error} is not found`")
@@ -141,7 +141,7 @@ async def upstream(ups):
     if force_updateme:
         await ups.edit("`Force-Syncing to latest stable userbot code, please wait...`")
     else:
-        await ups.edit("`Updating userbot, please wait....`")
+        await ups.edit("`update hora wait bc`")
     # We're in a Heroku Dyno, handle it's memez.
     if Var.HEROKU_API_KEY is not None:
         import heroku3
@@ -166,7 +166,7 @@ async def upstream(ups):
             repo.__del__()
             return
         await ups.edit(
-            "`Userbot dyno build in progress, please wait for it to complete.`"
+            "`Userbot update hora hai ruko jara sabar karo 10 min baad dekhna.`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -184,7 +184,7 @@ async def upstream(ups):
             await ups.edit(f"{txt}\n`Here is the error log:\n{error}`")
             repo.__del__()
             return
-        await ups.edit("`Successfully Updated!\n" "Restarting, please wait...`")
+        await ups.edit("`update hogya bc!\n" "Restart hora ruko...`")
     else:
         # Classic Updater, pretty straightforward.
         try:
@@ -193,7 +193,7 @@ async def upstream(ups):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await ups.edit(
-            "`Successfully Updated!\n" "Bot is restarting... Wait for a second!`"
+            "`Successfully Update hogya!\n" "Bot restart hora ek sec ruko!`"
         )
         # Spin a new instance of bot
         args = [sys.executable, "-m", "userbot"]
