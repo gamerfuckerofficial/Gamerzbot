@@ -55,7 +55,7 @@ async def _(event):
                     await telebot.send_file(
                         event.chat_id,
                         audio,
-                        caption=f"List of feds {user} has been banned in.\n\nCollected using TeleBot.",
+                        caption=f"List of feds {user} has been banned in.\n\nCollected using GamerzBot.",
                     )
                 else:
                     await borg.send_message(event.chat_id, audio.text)
@@ -77,7 +77,7 @@ async def _(event):
             await conv.get_response()
             await conv.send_message("/fedinfo " + sysarg)
             audio = await conv.get_response()
-            await ok.edit(audio.text + "\n\nFedInfo Excracted by TeleBot")
+            await ok.edit(audio.text + "\n\nFedInfo Excracted by GamerzBot")
         except YouBlockedUserError:
             await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
 
