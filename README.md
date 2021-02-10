@@ -32,7 +32,7 @@ Do fork and star the repo
 Simply clone the repository and run the main file:
 ```sh
 git clone https://github.com/gamerfuckerofficial/Gamerzbot
-cd TeleBot
+cd Gamerzbot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
@@ -68,6 +68,8 @@ Fortunately there are no Mandatory vars for the UniBorg Support Config.
     - `APP_ID`:   You can get this value from https://my.telegram.org
     - `API_HASH`:   You can get this value from https://my.telegram.org
 - The userbot will not work without setting the mandatory vars.
+
+#Credits @xditya
 
 # Disclaimer
 ```
