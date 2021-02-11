@@ -21,7 +21,7 @@ from telebot.telebotConfig import Config
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "GamerzBot User"
 CMD_HNDLR = Config.CMD_HNDLR
-CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⚡")
+CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "🌟")
 
 if CMD_HNDLR is None:
     CMD_HNDLR = "."
