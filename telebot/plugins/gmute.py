@@ -35,7 +35,7 @@ async def startgmute(event):
     except Exception as e:
         await eor(event, "Error occured!\nError is " + str(e))
     else:
-        await eor(event, "Silence now. **Successfully gmuted that person**")
+        await eor(event, "Silence now. **Teri chut mai land daal diya**")
 
 
 @telebot.on(admin_cmd(outgoing=True, pattern=r"ungmute ?(\d+)?"))
@@ -68,7 +68,7 @@ async def endgmute(event):
     except Exception as e:
         await eor(event, "Error occured!\nError is " + str(e))
     else:
-        await eor(event, "Successfully ungmuted that person")
+        await eor(event, "Teri chut se land nikal diya")
 
 
 @command(incoming=True)
