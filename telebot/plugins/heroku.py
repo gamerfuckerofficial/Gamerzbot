@@ -193,7 +193,7 @@ async def _(givelogs):
             " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku var !",
         )
     await eor(givelogs, "Downloading Logs..")
-    with open("logs-GamerzBot.txt", "w") as log:
+    with open("logs-Gamerzbot.txt", "w") as log:
         log.write(app.get_log())
     ok = app.get_log()
     message = ok
@@ -202,7 +202,7 @@ async def _(givelogs):
     url = f"https://del.dog/{r['key']}"
     await givelogs.client.send_file(
         givelogs.chat_id,
-        "logs-telebot.txt",
+        "logs-Gamerzbot.txt",
         reply_to=givelogs.id,
         caption=f"**Heroku** GamerzBot Logs.\nPasted [here]({url}) too!",
     )
