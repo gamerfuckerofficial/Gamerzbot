@@ -193,7 +193,7 @@ async def _(givelogs):
             " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku var !",
         )
     await eor(givelogs, "Downloading Logs..")
-    with open("logs-telebot.txt", "w") as log:
+    with open("logs-GamerzBot.txt", "w") as log:
         log.write(app.get_log())
     ok = app.get_log()
     message = ok
