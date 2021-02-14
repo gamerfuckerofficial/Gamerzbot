@@ -10,5 +10,5 @@ async def join(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
 
         await e.edit(
-            "Get a userbot like mine!! Watch [this video tutorial](https://t.me/Gamerzbots) on deploying..."
+            "Get a userbot like mine!! Watch [this video tutorial](https://t.me/Gamerzbots/98) on deploying..."
         )
