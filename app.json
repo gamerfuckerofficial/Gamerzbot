@@ -1,53 +1,149 @@
 {
-    "name": "Gamerz UserBot",
-    "description": "Pluggable telegram userbot, made in python using Telethon.",
-    "logo": "https://telegra.ph/file/f005d88b07a15e5cf30f3.jpg",
-    "keywords": ["Telethon", "telegram", "userbot", "python"],
-    "repository": "https://github.com/gamerfuckerofficial/Gamerzbot",
-    "website": "https://t.me/Gamerzbots",
-    "success_url": "https://t.me/Gamerzbots",
-    "stack": "container",
-    "env": {
-        "API_ID": {
-            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
-            "value": ""
-        },
-        "BOT_USERNAME": {
-            "description": "Make a bot from @BotFather, and enter it's username here, with '@'",
-            "value": ""
-        },
-        "BOT_TOKEN": {
-            "description": "Make a bot from @BotFather, and enter it's api token here.",
-            "value": ""
-        },
-        "SESSION": {
-            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
-            "value": ""
-        },
-        "REDIS_URI": {
-            "description": "Redis endpoint URL, from redislabs.com",
-            "value": ""
-        },
-        "REDIS_PASSWORD": {
-            "description": "Redis endpoint password, from redislabs.com",
-            "value": ""
-        },
-        "HEROKU_API": {
-            "description": "Heroku API token. Needed if deploying on heroku ONLY.",
-            "value": "",
-            "required": false
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Name of your heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
-            "value": ""
-        },
-        "LOG_CHANNEL": {
-            "description": "Create a private group. Add @missrose_bot and your BOT_USERNAME bot. Do /id. Paste that here",
-             "value": ""
-        }
-    }
+ "name": "Gamerzbot - UserBot",
+ "description": "GamerzBot userbot is modified version of telebot, from @Gamerzbots",
+ "logo": "https://telegra.ph/file/f005d88b07a15e5cf30f3.jpg",
+ "keywords": [
+  "telegram",
+  "userbot",
+  "Gamerzbot",
+  "modular",
+  "productivity"
+ ],
+ "repository": "https://github.com/gamerfuckerofficial/Gamerzbot",
+ "website": "htts://t.me/Gamerzbots",
+ "success_url": "https://t.me/Gamerzbots",
+ "stack": "container",
+ "env": {
+  "ENV": {
+   "description": "Setting this to ANYTHING will enable heroku.",
+   "value": "ANYTHING"
+  },
+  "TEMP_DOWNLOAD_DIRECTORY": {
+   "description": "Where downloaded files will go.",
+   "value": "./Gamerzbot/DOWNLOADS/",
+   "required": false
+  },
+  "APP_ID": {
+   "description": "Get this value from my.telegram.org! Please do not steal",
+   "value": ""
+  },
+  "API_HASH": {
+   "description": "Get this value from my.telegram.org! Please do not steal",
+   "value": ""
+  },
+  "STRING_SESSION": {
+   "description": "Get this value by running python3 telesetup.py locally or https://repl.it/@gamerfuckeroffi/Gamerzbot online.",
+   "value": ""
+  },  
+  "CUSTOM_PMPERMIT": {
+   "description": "The message that appears when someone PM's you. Leave it as such for default message.",
+   "value": "Do not spam here, else you will be blocked automatically."
+  },  
+  "GITHUB_ACCESS_TOKEN": {
+   "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
+   "value": "",
+   "required": false
+  },
+   "CMD_HNDLR": {
+   "description": "Used to invoke commands, leave blank for default, (dot)",
+   "value": "",
+   "required": false
+  },  
+   "SUDO_HNDLR": {
+   "description": "Used to invoke sudo commands, leave blank for default",
+   "value": "",
+   "required": false
+  },  
+  "GIT_REPO_NAME": {
+   "description": "Your repo name Example: gamerfuckerofficial/Gamerzbot, but GITHUB_ACCESS_TOKEN must be setup first.",
+   "value": "",
+   "required": false
+  },
+  "LYDIA_API_KEY": {
+   "description": "Needed for Lydia AI. Create a Intellivoid Account by visting https://coffeehouse.intellivoid.info/ to get your API.",
+   "value": "",
+   "required": false
+  },
+  "HEROKU_API_KEY": {
+   "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
+   "value": "",
+   "required": true
+  },  
+  "CHROME_BIN": {
+   "description": "Leave as such, Google Chrome (or) Chromium binary location for selenium based modules.",
+   "value": "/usr/bin/google-chrome",
+   "required": false
+  },
+  "CHROME_DRIVER": {
+   "description": "Leave as such, ChromeDriver location for selenium based modules",
+   "value": "/usr/bin/chromedriver",
+   "required": false
+  },
+  "SUDO_USERS": {
+   "description": "Users you want to give access to your bot. (Don't allow unknown people)",
+   "value": "",
+   "required": false
+  },
+  "PRIVATE_GROUP_ID": {
+   "description": "Same value as PRIVATE_GROUP_BOT_API_ID. Must read https://telegra.ph/GamerzBot-Setup-12-15 for knowing how to get the value. Required for pmpermit.",
+   "value": "",
+   "required": true
+  },
+  "HEROKU_APP_NAME": {
+   "description": "The Value of App Name you filled in right on top.Required for updater to work.",
+   "value": "",
+   "required": true
+  },
+  "TG_BOT_TOKEN_BF_HER": {
+   "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. Get it else .help won't work.",
+   "value": "",
+   "required": true
+  },
+  "TG_BOT_USER_NAME_BF_HER": {
+   "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the username of your bot. Needed for .help to work.",
+   "value": "",
+   "required": true
+  },
+  "ALIVE_NAME": {
+   "description": "Your Telegram Username. ",
+   "value": "",
+   "required": false
+  },  
+  "MAX_SPAM": {
+   "description": "Number of messages one can send in your PM before being approved. By default, it is 3.",
+   "value": "3",
+   "required": false
+  },
+  "OCR_SPACE_API_KEY": {
+   "description": "Required for OCR functionality. Get from https://ocr.space/ocrapi",
+   "value": "",
+   "required": false
+  },
+  "REM_BG_API_KEY": {
+   "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
+   "value": "",
+   "required": false
+  },
+  "ALIVE_PIC": {
+   "description": "telegra.ph link to theimage you want as alive pic, leave blank for sticker",
+   "value": "",
+   "required": false
+  },
+  "PMPERMIT_PIC": {
+  "description": "telegra.ph link to theimage you want as pmpermit pic, leave blank for default one!",
+  "value": "",
+  "required": false
+  },
+  "TZ": {
+   "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+   "value": "",
+   "required": false
+  }
+ },
+ "addons": [{
+  "plan": "heroku-postgresql",
+  "options": {
+   "version": "9.6"
+  }
+ }]
 }
