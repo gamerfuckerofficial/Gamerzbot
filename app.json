@@ -138,12 +138,16 @@
    "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
    "value": "",
    "required": false
-  }
+  },
+ "REDIS_URI: {
+ "description": "redis",
+ "value": "",
+ "required": true
  },
- "addons": [{
-  "plan": "heroku-postgresql",
-  "options": {
-   "version": "9.6"
+ "REDIS_PASSWORD: {
+ "description": "redis",
+ "value": "",
+ "required": true
   }
  }]
 }
